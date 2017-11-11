@@ -8,14 +8,16 @@ function createTable(){
             mytable = $('<table>Price/Fuel Consumption</table>').attr({ id: "basicTable" });
             var rows = new Number($("#rowcount").val());
             var cols = new Number($("#columncount").val());
+            rName = new String($("#rowname").val());
+            cName = new String($("#columnname").val());
             var tr = [];
 
             for (var i = 0; i < rows; i++) {
                 var row = $('<tr></tr>').attr({ class: ["class1", "class2", "class3"].join(' ') }).appendTo(mytable);
                 var col = $('<td></td>').attr({ class: ["class1", "class2", "class3"].join(' ') }).appendTo(mytable);
                 //$(col).append("<h4>Price "+i+" </h4>");
-                $(row).append("<b>MPG "+(i+1)+":</b>");
-                $(mytable).append("<h4>Price " +(i+1)+"</h4>");
+                $(row).append("<b>"+cName+" "+(i+1)+":</b>");
+                $(mytable).append("<b>"+rName+" "+(i+1)+":</b>");
                 for (var j = 0; j < rows; j++) {
                     $('<td></td>').text("$").appendTo(row);
                     var string = "yourPrice";

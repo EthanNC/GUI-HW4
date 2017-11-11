@@ -33,9 +33,12 @@ and rows resulting in a table with inputs for the price. The User also has an op
 <body><!-- Form Markup -->
   <h1>Homework 4 - Dynamic Table</h1>
           <div id="form">
-          Enter Amount of Prices: <input type="number" class="qty" id="rowcount" placeholder="Enter 1 to 7"/><br>
+          Enter Col Name: <input type="text" id="rowname" placeholder="Name"/><br>
           <!-- Enter Amount of MPG: <input type="number" class="qty" id="rowcount" placeholder="Enter 1 to 7"/><br> -->
-          Enter Amount of MPG: <input type="number" class="qty" id="columncount" placeholder="Enter 1 to 7"/><br>
+          Enter Row Name: <input type="text" id="columnname" placeholder="Name"/><br>
+          Enter Number Amount of Col: <input type="number" class="qty" id="rowcount" placeholder="Enter 1 to 7"/><br>
+          <!-- Enter Amount of MPG: <input type="number" class="qty" id="rowcount" placeholder="Enter 1 to 7"/><br> -->
+          Enter Number Amount of Rows : <input type="number" class="qty" id="columncount" placeholder="Enter 1 to 7"/><br>
           <input type="button" onclick="createTable();" value="Create Table" /> <button onclick="deleteTable()">Delete Tables</button>
           </div>
           <!-- Table Markup -->
